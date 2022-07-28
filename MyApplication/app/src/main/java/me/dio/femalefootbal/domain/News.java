@@ -1,37 +1,52 @@
 package me.dio.femalefootbal.domain;
 
-public class News {
-    private String Title;
-    private String Tag;
-    private String FastResume;
 
-    public News(String title, String description, String tag) {
-        Title = title;
-        Tag = tag;
-        this.FastResume = description;
-    }
+
+public class News {
+    public Double id;
+    public String title;
+    public String tag;
+    public String description;
+    public String image;
+    public String link;
 
     public String getTitle() {
-        return Title;
+        return title;
     }
 
     public void setTitle(String title) {
-        Title = title;
-    }
-
-    public String getFastResume() {
-        return FastResume;
-    }
-
-    public void setFastResume(String fastResume) {
-        this.FastResume = fastResume;
+        this.title = title;
     }
 
     public String getTag() {
-        return Tag;
+        return tag;
     }
 
     public void setTag(String tag) {
-        Tag = tag;
+        this.tag = tag;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
     }
 }

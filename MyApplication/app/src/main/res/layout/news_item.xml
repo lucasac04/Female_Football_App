@@ -11,14 +11,14 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/txt_NewsTitle"
+            android:id="@+id/tv_NewsTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/half_margin_default"
             android:layout_marginBottom="@dimen/half_margin_default"
             android:text="@string/txt_NewsInfo"
             android:textAppearance="?attr/textAppearanceBody1"
-            app:layout_constraintBottom_toTopOf="@+id/txt_tags"
+            app:layout_constraintBottom_toTopOf="@+id/tv_tags"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/iv_Image" />
@@ -39,7 +39,7 @@
             app:srcCompat="@drawable/ic_favorites" />
 
         <TextView
-            android:id="@+id/txt_fast_resume"
+            android:id="@+id/tv_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_default"
@@ -62,7 +62,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/txt_tags"
+            android:id="@+id/tv_tags"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_default"
@@ -70,7 +70,7 @@
             android:text="@string/txt_tags"
             android:textAppearance="?attr/textAppearanceBody2"
             android:textColor="?android:attr/textColorSecondary"
-            app:layout_constraintBottom_toTopOf="@+id/txt_fast_resume"
+            app:layout_constraintBottom_toTopOf="@+id/tv_description"
             app:layout_constraintStart_toStartOf="parent" />
 
         <ImageView

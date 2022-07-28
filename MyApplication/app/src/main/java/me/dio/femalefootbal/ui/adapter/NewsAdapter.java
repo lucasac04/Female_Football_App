@@ -30,9 +30,9 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         News news = this.news.get(position);
-        holder.binding.txtNewsTitle.setText(news.getTitle());
-        holder.binding.txtTags.setTag(news.getTag());
-        holder.binding.txtFastResume.setText(news.getFastResume());
+        holder.binding.tvNewsTitle.setText(news.getTitle());
+        holder.binding.tvTags.setText(news.getTag());
+        holder.binding.tvDescription.setText(news.getDescription());
     }
 
     @Override
