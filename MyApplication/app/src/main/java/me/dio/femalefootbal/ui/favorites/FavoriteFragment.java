@@ -1,4 +1,4 @@
-package me.dio.femalefootbal.ui.dashboard;
+package me.dio.femalefootbal.ui.favorites;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

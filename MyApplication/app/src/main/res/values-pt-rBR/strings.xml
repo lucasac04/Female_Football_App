@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Girls on Soccer</string>
+    <string name="title_news">Notícias</string>
+    <string name="title_dashboard">Favoritos</string>
+    <string name="cd_NewsImage">Imagem do Produto</string>
+    <string name="txt_NewsInfo">Informações da Notícia</string>
+    <string name="txt_tags">Palavras Chaves</string>
+    <string name="supporting_text">Resumo Rápido</string>
+    <string name="ab_ViewMore"> Veja Mais </string>
+    <string name="cd_FavoriteDescription">Botão de Favoritar</string>
+    <string name="cd_ShareDescription">Botão de Compartilhamento</string>
+
+</resources>

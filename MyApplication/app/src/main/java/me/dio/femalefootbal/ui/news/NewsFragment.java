@@ -1,16 +1,16 @@
-package me.dio.femalefootbal.ui.home;
+package me.dio.femalefootbal.ui.news;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-
+import androidx.recyclerview.widget.LinearLayoutManager;
 import me.dio.femalefootbal.databinding.FragmentNewsBinding;
+import me.dio.femalefootbal.ui.adapter.NewsAdapter;
 
 public class NewsFragment extends Fragment {
 
@@ -24,8 +24,10 @@ public class NewsFragment extends Fragment {
         binding = FragmentNewsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textNews;
-        newsViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        binding.rvNews.setLayoutManager(new LinearLayoutManager(getContext()));
+        newsViewModel.getNews().observe(getViewLifecycleOwner(), news -> {
+            binding.rvNews.setAdapter(new NewsAdapter(news));
+        });
         return root;
     }
 

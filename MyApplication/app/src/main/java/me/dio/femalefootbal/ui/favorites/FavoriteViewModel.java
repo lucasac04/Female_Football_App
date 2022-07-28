@@ -1,16 +1,16 @@
-package me.dio.femalefootbal.ui.home;
+package me.dio.femalefootbal.ui.favorites;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NewsViewModel extends ViewModel {
+public class FavoriteViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public NewsViewModel() {
+    public FavoriteViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is new fragment");
+        mText.setValue("This is favorite fragment");
     }
 
     public LiveData<String> getText() {

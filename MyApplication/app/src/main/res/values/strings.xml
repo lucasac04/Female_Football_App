@@ -2,5 +2,12 @@
     <string name="app_name">Girls on Soccer</string>
     <string name="title_news">News</string>
     <string name="title_dashboard">Favorites</string>
+    <string name="cd_NewsImage">Product Image</string>
+    <string name="txt_NewsInfo">News Information</string>
+    <string name="txt_tags">Tags</string>
+    <string name="supporting_text">Fast Resume</string>
+    <string name="ab_ViewMore">View More</string>
+    <string name="cd_FavoriteDescription">Favorite Botton</string>
+    <string name="cd_ShareDescription">Share Button</string>
 
 </resources>

@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_news">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="me.dio.femalefootbal.ui.home.NewsFragment"
+        android:id="@+id/navigation_news"
+        android:name="me.dio.femalefootbal.ui.news.NewsFragment"
         android:label="@string/title_news"
         tools:layout="@layout/fragment_news" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="me.dio.femalefootbal.ui.dashboard.FavoriteFragment"
+        android:id="@+id/navigation_favorites"
+        android:name="me.dio.femalefootbal.ui.favorites.FavoriteFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_favorites" />
 
